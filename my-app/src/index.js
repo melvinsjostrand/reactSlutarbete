@@ -1,28 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import MyComponent from "./CreateWebsite";
 import reportWebVitals from './reportWebVitals';
 
 
 function HelloWorld() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="https://www.google.com">Google</a>
-        </li>
-        <li>
-          <a href="blogsida.html">blogg</a>
-        </li>
-        <li>
-          <a href="blogsida.html">blogg</a>
-        </li>
-        <li>
-
-        </li>
-      </ul>
-    </nav>
+    <MyComponent />
   )
 }
 
@@ -30,7 +15,6 @@ function HelloWorld() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <HelloWorld />
   </React.StrictMode>
 );
